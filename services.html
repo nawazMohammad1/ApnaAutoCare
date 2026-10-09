@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Our Car Services | ApnaAutoCare</title>
+  <meta name="description"
+    content="Explore car servicing, repairs, diagnostics, washing, detailing, AC care and more at ApnaAutoCare. Your Car. Our Responsibility.">
+  <meta name="theme-color" content="#111820">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+  <!-- Shared website CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Services page CSS -->
+  <link rel="stylesheet" href="css/services.css">
+</head>
+
+<body>
+
+  <!-- ================= SHARED PRELOADER ================= -->
+  <div class="preloader" id="preloader" aria-label="Loading ApnaAutoCare">
+    <div class="loader-content">
+      <div class="loader-logo">
+        <i class="fa-solid fa-car-side"></i>
+      </div>
+      <h2>Apna<span>AutoCare</span></h2>
+      <p>Your Car. Our Responsibility.</p>
+      <div class="loader-track"><span></span></div>
+    </div>
+  </div>
+
+
+  <!-- ================= SHARED NAVBAR ================= -->
+  <header class="site-header" id="siteHeader">
+    <nav class="navbar container" aria-label="Main navigation">
+
+      <a href="index.html" class="brand" aria-label="ApnaAutoCare home">
+        <span class="brand-icon">
+          <i class="fa-solid fa-car-side"></i>
+        </span>
+        <span class="brand-copy">
+          <span class="brand-name">Apna<span>AutoCare</span></span>
+          <span class="brand-tagline">YOUR CAR. OUR RESPONSIBILITY.</span>
+        </span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false"
+        aria-controls="navMenu" type="button">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <div class="nav-menu" id="navMenu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="services.html" class="nav-link active" aria-current="page">Services</a>
+        <a href="packages.html" class="nav-link">Packages</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="reviews.html" class="nav-link">Reviews</a>
+        <a href="contact.html" class="nav-link mobile-contact">Contact</a>
+
+        <a href="booking.html" class="btn btn-primary nav-booking">
+          Book a Service
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+      </div>
+
+    </nav>
+  </header>
+
+
+  <main>
+
+    <!-- ================= SERVICES HERO ================= -->
+    <section class="services-hero">
+      <div class="services-hero-photo"></div>
+      <div class="services-hero-overlay"></div>
+
+      <div class="container services-hero-content">
+
+        <div class="services-hero-copy reveal">
+          <div class="services-breadcrumb">
+            <a href="index.html">Home</a>
+            <i class="fa-solid fa-chevron-right"></i>
+            <span>Our Services</span>
+          </div>
+
+          <span class="section-label section-label-light">
+            COMPLETE CARE. ONE PLACE.
+          </span>
+
+          <h1>
+            Every service.<br>
+            <span>One less worry.</span>
+          </h1>
+
+          <p>
+            From regular maintenance to a fresh, showroom-ready finish,
+            find the right care for your car and book at your convenience.
+          </p>
+
+          <div class="services-hero-actions">
+            <a href="#serviceDirectory" class="btn btn-primary btn-large">
+              Explore Services
+              <i class="fa-solid fa-arrow-down"></i>
+            </a>
+
+            <a href="booking.html" class="services-hero-link">
+              Book an appointment
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="services-hero-badge reveal">
+          <span class="hero-badge-icon">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+          </span>
+          <div>
+            <strong>Care that fits your car</strong>
+            <p>Choose your service. Plan your visit.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="services-hero-bottom">
+        <div class="container">
+          <span><i class="fa-solid fa-check"></i> Maintenance</span>
+          <span><i class="fa-solid fa-check"></i> Repairs</span>
+          <span><i class="fa-solid fa-check"></i> Cleaning & Detailing</span>
+          <span><i class="fa-solid fa-check"></i> Preventive Care</span>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ================= INTRO ================= -->
+    <section class="services-intro section-padding">
+      <div class="container services-intro-layout">
+
+        <div class="services-intro-title reveal">
+          <span class="section-label">CARE FOR YOUR NEXT MILE</span>
+          <h2>What can we help<br>your car <span>with?</span></h2>
+        </div>
+
+        <div class="services-intro-description reveal">
+          <p>
+            Every car has different needs. Explore our service options,
+            compare the type of care available and select what suits your
+            vehicle. Not sure where to start? Get in touch with us.
+          </p>
+
+          <a href="contact.html" class="text-link">
+            Help me choose
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ================= SERVICE DIRECTORY ================= -->
+    <section class="service-directory section-padding" id="serviceDirectory">
+      <div class="container">
+
+        <div class="directory-heading reveal">
+          <div>
+            <span class="section-label">THE SERVICE DIRECTORY</span>
+            <h2>Find the right <span>care.</span></h2>
+            <p>Explore our services or filter by the care your car needs.</p>
+          </div>
+
+          <div class="directory-count">
+            <span class="count-icon">
+              <i class="fa-solid fa-list-check"></i>
+            </span>
+            <div>
+              <strong id="serviceCount">8 services</strong>
+              <span>to explore</span>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Search -->
+        <div class="service-search-wrap reveal">
+          <label class="service-search" for="serviceSearch">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="search" id="serviceSearch" placeholder="Search services, repairs, cleaning..."
+              autocomplete="off" aria-label="Search car services">
+            <span class="search-shortcut">SEARCH</span>
+          </label>
+        </div>
+
+
+        <!-- Interactive filters -->
+        <div class="service-filters reveal" role="group" aria-label="Filter services by category">
+          <button class="filter-btn active" type="button" data-filter="all" aria-pressed="true">
+            All Services <span>08</span>
+          </button>
+
+          <button class="filter-btn" type="button" data-filter="maintenance" aria-pressed="false">
+            <i class="fa-solid fa-oil-can"></i> Maintenance
+          </button>
+
+          <button class="filter-btn" type="button" data-filter="repair" aria-pressed="false">
+            <i class="fa-solid fa-screwdriver-wrench"></i> Repairs
+          </button>
+
+          <button class="filter-btn" type="button" data-filter="cleaning" aria-pressed="false">
+            <i class="fa-solid fa-droplet"></i> Cleaning
+          </button>
+
+          <button class="filter-btn" type="button" data-filter="inspection" aria-pressed="false">
+            <i class="fa-solid fa-gauge-high"></i> Inspection
+          </button>
+        </div>
+
+
+        <!-- Service cards -->
+        <div class="service-directory-grid" id="serviceGrid" aria-live="polite">
+
+          <!-- 01 -->
+          <article class="directory-card reveal" data-category="maintenance"
+            data-search="general servicing routine maintenance oil filter engine check scheduled service">
+
+            <div class="directory-image">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoqgvf6gnWjcyqZhQOj7-1QzVLIqe6WtzAk5eRJhuntg&s=10"
+                <span class=" directory-number">01</span>
+              <span class="directory-tag">ESSENTIAL CARE</span>
+            </div>
+
+            <div class="directory-card-body">
+              <div class="directory-icon"><i class="fa-solid fa-oil-can"></i></div>
+              <h3>General Car Servicing</h3>
+              <p>
+                Routine maintenance, fluid checks and service inspections
+                to help keep your vehicle running smoothly.
+              </p>
+
+              <ul class="service-features">
+                <li><i class="fa-solid fa-check"></i> Routine maintenance</li>
+                <li><i class="fa-solid fa-check"></i> Fluid and filter checks</li>
+              </ul>
+
+              <div class="directory-card-footer">
+                <span>Regular maintenance</span>
+                <a href="booking.html?service=general-servicing" aria-label="Book general car servicing">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+
+          <!-- 02 -->
+          <article class="directory-card reveal" data-category="repair"
+            data-search="engine repairs diagnostics warning lights engine problems mechanical repair">
+
+            <div class="directory-image">
+              <img src="https://images.unsplash.com/photo-1487754180451-c456f719a1fc?auto=format&fit=crop&w=900&q=85"
+                alt="Mechanic working on a car in a repair workshop" loading="lazy">
+              <span class="directory-number">02</span>
+              <span class="directory-tag">EXPERT ATTENTION</span>
+            </div>
+
+            <div class="directory-card-body">
+              <div class="directory-icon"><i class="fa-solid fa-gears"></i></div>
+              <h3>Repairs & Diagnostics</h3>
+              <p>
+                Get help investigating warning lights, unusual sounds
+                and other vehicle performance concerns.
+              </p>
+
+              <ul class="service-features">
+                <li><i class="fa-solid fa-check"></i> Fault assessment</li>
+                <li><i class="fa-solid fa-check"></i> Repair recommendations</li>
+              </ul>
+
+              <div class="directory-card-footer">
+                <span>Repair assistance</span>
+                <a href="booking.html?service=repairs-diagnostics" aria-label="Book repairs and diagnostics">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+
+          <!-- 03 -->
+          <article class="directory-card reveal" data-category="cleaning"
+            data-search="car wash exterior cleaning foam wash vehicle wash">
+
+            <div class="directory-image">
+              <img src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?auto=format&fit=crop&w=900&q=85"
+                alt="Car receiving a professional wash" loading="lazy">
+              <span class="directory-number">03</span>
+              <span class="directory-tag">FRESH FINISH</span>
+            </div>
+
+            <div class="directory-card-body">
+              <div class="directory-icon"><i class="fa-solid fa-droplet"></i></div>
+              <h3>Car Wash</h3>
+              <p>
+                Refresh your vehicle's exterior with a thorough clean
+                designed to remove everyday dirt and grime.
+              </p>
+
+              <ul class="service-features">
+                <li><i class="fa-solid fa-check"></i> Exterior cleaning</li>
+                <li><i class="fa-solid fa-check"></i> Finish inspection</li>
+              </ul>
+
+              <div class="directory-card-footer">
+                <span>Exterior care</span>
+                <a href="booking.html?service=car-wash" aria-label="Book a car wash">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+
+          <!-- 04 -->
+          <article class="directory-card reveal" data-category="cleaning"
+            data-search="interior detailing deep cleaning upholstery seats dashboard vacuum">
+
+            <div class="directory-image">
+              <img src="https://images.unsplash.com/photo-1507136566006-cfc505b114fc?auto=format&fit=crop&w=900&q=85"
+                alt="Clean and detailed vehicle interior" loading="lazy">
+              <span class="directory-number">04</span>
+              <span class="directory-tag">INSIDE & OUT</span>
+            </div>
+
+            <div class="directory-card-body">
+              <div class="directory-icon"><i class="fa-solid fa-spray-can-sparkles"></i></div>
+              <h3>Interior Detailing</h3>
+              <p>
+                Give your cabin extra attention with interior cleaning
+                for a more comfortable driving environment.
+              </p>
+
+              <ul class="service-features">
+                <li><i class="fa-solid fa-check"></i> Cabin surface cleaning</li>
+                <li><i class="fa-solid fa-check"></i> Interior refresh</li>
+              </ul>
+
+              <div class="directory-card-footer">
+                <span>Interior care</span>
+                <a href="booking.html?service=interior-detailing" aria-label="Book interior detailing">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+
+          <!-- 05 -->
+          <article class="directory-card reveal" data-category="maintenance"
+            data-search="battery replacement battery testing electrical starting problem">
+
+            <div class="directory-image">
+              <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=900&q=85"
+                alt="Automotive electrical and technical service work" loading="lazy">
+              <span class="directory-number">05</span>
+              <span class="directory-tag">POWER & STARTING</span>
+            </div>
+
+            <div class="directory-card-body">
+              <div class="directory-icon"><i class="fa-solid fa-car-battery"></i></div>
+              <h3>Battery & Electrical Care</h3>
+              <p>
+                Get assistance with starting difficulties, battery
+                condition and common electrical concerns.
+              </p>
+
+              <ul class="service-features">
+                <li><i class="fa-solid fa-check"></i> Battery assessment</li>
+                <li><i class="fa-solid fa-check"></i> Electrical checks</li>
+              </ul>
+
+              <div class="directory-card-footer">
+                <span>Electrical care</span>
+                <a href="booking.html?service=battery-electrical" aria-label="Book battery and electrical care">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+
+          <!-- 06 -->
+          <article class="directory-card reveal" data-category="repair"
+            data-search="air conditioning AC cooling service ventilation repair climate control">
+
+            <div class="directory-image">
+              <img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=900&q=85"
+                alt="Vehicle maintenance and inspection equipment" loading="lazy">
+              <span class="directory-number">06</span>
+              <span class="directory-tag">COMFORT CARE</span>
+            </div>
+
+            <div class="directory-card-body">
+              <div class="directory-icon"><i class="fa-solid fa-fan"></i></div>
+              <h3>AC Service & Repair</h3>
+              <p>
+                Investigate weak cooling, unusual AC smells and
+                other air-conditioning performance concerns.
+              </p>
+
+              <ul class="service-features">
+                <li><i class="fa-solid fa-check"></i> Cooling performance check</li>
+                <li><i class="fa-solid fa-check"></i> System assessment</li>
+              </ul>
+
+              <div class="directory-card-footer">
+                <span>Cabin comfort</span>
+                <a href="booking.html?service=ac-service" aria-label="Book air conditioning service">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+
+          <!-- 07 -->
+          <article class="directory-card reveal" data-category="inspection"
+            data-search="brake inspection pads brake noise braking safety checks">
+
+            <div class="directory-image">
+              <img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=900&q=85"
+                alt="Automotive workshop equipment for vehicle checks" loading="lazy">
+              <span class="directory-number">07</span>
+              <span class="directory-tag">SAFETY FIRST</span>
+            </div>
+
+            <div class="directory-card-body">
+              <div class="directory-icon"><i class="fa-solid fa-shield-halved"></i></div>
+              <h3>Brake Inspection</h3>
+              <p>
+                Have braking concerns assessed, including unusual
+                noises, vibration or changes in brake response.
+              </p>
+
+              <ul class="service-features">
+                <li><i class="fa-solid fa-check"></i> Brake condition assessment</li>
+                <li><i class="fa-solid fa-check"></i> Maintenance guidance</li>
+              </ul>
+
+              <div class="directory-card-footer">
+                <span>Safety inspection</span>
+                <a href="booking.html?service=brake-inspection" aria-label="Book brake inspection">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+
+          <!-- 08 -->
+          <article class="directory-card reveal" data-category="inspection"
+            data-search="full vehicle inspection preventive maintenance tyres fluids lights condition">
+
+            <div class="directory-image">
+              <img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=900&q=85"
+                alt="Vehicle undergoing a professional condition check" loading="lazy">
+              <span class="directory-number">08</span>
+              <span class="directory-tag">PEACE OF MIND</span>
+            </div>
+
+            <div class="directory-card-body">
+              <div class="directory-icon"><i class="fa-solid fa-clipboard-check"></i></div>
+              <h3>Vehicle Health Check</h3>
+              <p>
+                Review key vehicle components and identify areas
+                that may need attention or preventive maintenance.
+              </p>
+
+              <ul class="service-features">
+                <li><i class="fa-solid fa-check"></i> General condition review</li>
+                <li><i class="fa-solid fa-check"></i> Maintenance guidance</li>
+              </ul>
+
+              <div class="directory-card-footer">
+                <span>Preventive care</span>
+                <a href="booking.html?service=vehicle-health-check" aria-label="Book a vehicle health check">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+
+        <!-- No results -->
+        <div class="service-empty" id="serviceEmpty" hidden>
+          <span><i class="fa-solid fa-magnifying-glass"></i></span>
+          <h3>No matching services found</h3>
+          <p>Try another search term or select a different category.</p>
+          <button type="button" class="btn btn-primary" id="resetServices">
+            Show All Services
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ================= SERVICE GUIDANCE ================= -->
+    <section class="service-guidance section-padding">
+      <div class="container guidance-layout">
+
+        <div class="guidance-copy reveal">
+          <span class="section-label">NOT SURE WHERE TO START?</span>
+          <h2>Tell us what's wrong.<br><span>Let's take it from there.</span></h2>
+          <p>
+            A strange sound, an unexpected dashboard light or simply time
+            for routine maintenance? Send us an enquiry to discuss the
+            next step for your vehicle.
+          </p>
+
+          <div class="guidance-actions">
+            <a href="contact.html" class="btn btn-primary">
+              Ask Our Team <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="faq.html" class="text-link">
+              Read FAQs <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="guidance-visual reveal">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkQpBw90uLI7yO5Ywh3mB4YgSgddn5Lp3l0rv3byI3QQ&s=10"
+            alt="Car in a professional service workshop" loading="lazy">
+
+          <div class="guidance-floating">
+            <span><i class="fa-solid fa-comments"></i></span>
+            <div>
+              <strong>Need a little guidance?</strong>
+              <p>We're here to help you choose.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ================= BOOKING CTA ================= -->
+    <section class="service-booking-cta">
+      <div class="container service-booking-inner reveal">
+
+        <div class="service-cta-icon">
+          <i class="fa-solid fa-calendar-check"></i>
+        </div>
+
+        <div class="service-cta-copy">
+          <span class="section-label section-label-light">YOUR NEXT STEP</span>
+          <h2>Found the service you need?</h2>
+          <p>Choose your preferred appointment details and send a booking request.</p>
+        </div>
+
+        <a href="booking.html" class="btn btn-primary btn-large">
+          Book Your Service <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ================= SHARED FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container">
+
+      <div class="footer-main">
+
+        <div class="footer-brand-column">
+          <a href="index.html" class="brand footer-brand" aria-label="ApnaAutoCare home">
+            <span class="brand-icon">
+              <i class="fa-solid fa-car-side"></i>
+            </span>
+            <span class="brand-copy">
+              <span class="brand-name">Apna<span>AutoCare</span></span>
+              <span class="brand-tagline">YOUR CAR. OUR RESPONSIBILITY.</span>
+            </span>
+          </a>
+
+          <p class="footer-description">
+            Making car care simpler with useful services, convenient
+            booking and a commitment to your journey.
+          </p>
+
+          <div class="footer-socials">
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h3>Explore</h3>
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="services.html">Our Services</a>
+          <a href="packages.html">Service Packages</a>
+          <a href="gallery.html">Gallery</a>
+        </div>
+
+        <div class="footer-column">
+          <h3>Customer Care</h3>
+          <a href="booking.html">Book a Service</a>
+          <a href="reviews.html">Customer Reviews</a>
+          <a href="contact.html">Contact Us</a>
+          <a href="faq.html">FAQs</a>
+        </div>
+
+        <div class="footer-column footer-contact">
+          <h3>Need Assistance?</h3>
+          <p><i class="fa-solid fa-car"></i> Let's find the right care for your car.</p>
+          <a href="contact.html" class="footer-contact-link">
+            Get in touch <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a href="booking.html" class="btn btn-primary footer-booking">
+            Book Your Service
+          </a>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span id="currentYear"></span> ApnaAutoCare. All rights reserved.</p>
+
+        <div class="footer-legal">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms & Conditions</a>
+        </div>
+
+        <a href="#siteHeader" class="back-to-top" aria-label="Back to top">
+          <i class="fa-solid fa-arrow-up"></i>
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- Shared JavaScript -->
+  <script src="js/script.js"></script>
+
+  <!-- Services page JavaScript -->
+  <script src="js/services.js"></script>
+
+</body>
+
+</html>

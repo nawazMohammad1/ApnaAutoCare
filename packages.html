@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Explore ApnaAutoCare car service packages for routine maintenance, deep cleaning and complete vehicle care. Choose a package and book your service.">
+  <meta name="theme-color" content="#171a1e">
+  <title>Service Packages | ApnaAutoCare</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/packages.css">
+</head>
+
+<body>
+
+  <!-- PRELOADER: Keep consistent with index.html and services.html -->
+  <div class="preloader" id="preloader" aria-label="Loading ApnaAutoCare">
+    <div class="loader-content">
+      <div class="loader-logo">
+        <i class="fa-solid fa-car-side"></i>
+      </div>
+      <h2>Apna<span>AutoCare</span></h2>
+      <p>Your Car. Our Responsibility.</p>
+      <div class="loader-track"><span></span></div>
+    </div>
+  </div>
+
+  <!-- HEADER / NAVBAR: Keep consistent with other pages -->
+  <header class="site-header" id="siteHeader">
+    <nav class="navbar container">
+      <a href="index.html" class="brand" aria-label="ApnaAutoCare home">
+        <span class="brand-icon">
+          <i class="fa-solid fa-car-side"></i>
+        </span>
+        <span class="brand-copy">
+          <span class="brand-name">Apna<span>AutoCare</span></span>
+          <span class="brand-tagline">Your Car. Our Responsibility.</span>
+        </span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation menu" aria-expanded="false"
+        aria-controls="navMenu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="packages.html" class="nav-link active" aria-current="page">Packages</a></li>
+        <li><a href="about.html" class="nav-link">About Us</a></li>
+        <li><a href="reviews.html" class="nav-link">Reviews</a></li>
+        <li><a href="contact.html" class="nav-link mobile-contact">Contact</a></li>
+        <li class="nav-cta">
+          <a href="booking.html" class="btn btn-primary">Book a Service <i class="fa-solid fa-arrow-right"></i></a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="packages-hero">
+      <div class="packages-hero-image"></div>
+      <div class="packages-hero-overlay"></div>
+
+      <div class="container packages-hero-content">
+        <div class="packages-breadcrumb">
+          <a href="index.html">Home</a>
+          <i class="fa-solid fa-chevron-right"></i>
+          <span>Packages</span>
+        </div>
+
+        <span class="section-label section-label-light">
+          <i class="fa-solid fa-screwdriver-wrench"></i> CARE THAT FITS YOUR CAR
+        </span>
+
+        <h1>Better care.<br><span>Smarter packages.</span></h1>
+
+        <p>
+          From everyday maintenance to a complete refresh, choose a car care
+          package that fits your vehicle's needs and your budget.
+        </p>
+
+        <div class="packages-hero-actions">
+          <a href="#packageCollection" class="btn btn-primary btn-large">
+            Explore Packages <i class="fa-solid fa-arrow-down"></i>
+          </a>
+          <a href="booking.html" class="packages-hero-link">
+            Need help choosing? <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+
+        <div class="packages-trust-row">
+          <span><i class="fa-solid fa-check-circle"></i> Clear package details</span>
+          <span><i class="fa-solid fa-check-circle"></i> Convenient booking</span>
+          <span><i class="fa-solid fa-check-circle"></i> Care for every drive</span>
+        </div>
+      </div>
+
+      <div class="hero-side-note">
+        <span class="hero-side-line"></span>
+        <span>CARE MADE SIMPLE</span>
+      </div>
+    </section>
+
+    <!-- QUICK BENEFITS -->
+    <section class="package-benefits">
+      <div class="container package-benefits-grid">
+        <article class="package-benefit reveal">
+          <span class="benefit-icon"><i class="fa-solid fa-list-check"></i></span>
+          <div>
+            <h3>Know what's included</h3>
+            <p>Review package details before booking.</p>
+          </div>
+        </article>
+
+        <article class="package-benefit reveal">
+          <span class="benefit-icon"><i class="fa-solid fa-wallet"></i></span>
+          <div>
+            <h3>Plan your budget</h3>
+            <p>Compare service options in one place.</p>
+          </div>
+        </article>
+
+        <article class="package-benefit reveal">
+          <span class="benefit-icon"><i class="fa-solid fa-calendar-check"></i></span>
+          <div>
+            <h3>Book with ease</h3>
+            <p>Choose a package to start your enquiry.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- PACKAGE INTRO -->
+    <section class="section-padding package-intro" id="packageCollection">
+      <div class="container">
+        <div class="package-intro-layout">
+          <div class="package-intro-copy reveal">
+            <span class="section-label">OUR SERVICE PACKAGES</span>
+            <h2>Find the right care<br>for your <span>everyday drive.</span></h2>
+          </div>
+
+          <div class="package-intro-side reveal">
+            <p>
+              Every car has different needs. Explore packages for routine
+              maintenance, a cleaner cabin, or a more complete care visit.
+              You can also contact us if you're unsure what your vehicle needs.
+            </p>
+            <a href="services.html" class="text-link">
+              View individual services <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- FILTERS -->
+        <div class="package-filter-area reveal">
+          <div class="package-filter-heading">
+            <span>Explore by need</span>
+            <span class="package-result-count" id="packageCount" aria-live="polite">4 packages</span>
+          </div>
+
+          <div class="package-filters" role="group" aria-label="Filter service packages">
+            <button type="button" class="package-filter active" data-filter="all" aria-pressed="true">All
+              Packages</button>
+            <button type="button" class="package-filter" data-filter="maintenance"
+              aria-pressed="false">Maintenance</button>
+            <button type="button" class="package-filter" data-filter="cleaning" aria-pressed="false">Cleaning &
+              Care</button>
+            <button type="button" class="package-filter" data-filter="complete" aria-pressed="false">Complete
+              Care</button>
+          </div>
+        </div>
+
+        <!-- PACKAGE CARDS -->
+        <div class="package-grid" id="packageGrid">
+
+          <!-- PACKAGE 1 -->
+          <article class="package-card reveal" data-category="maintenance" data-package="Essential Care">
+            <div class="package-card-top">
+              <div class="package-icon"><i class="fa-solid fa-gauge-high"></i></div>
+              <span class="package-type">EVERYDAY ESSENTIAL</span>
+            </div>
+
+            <h3>Essential Care</h3>
+            <p class="package-description">
+              A practical starting point for regular vehicle upkeep.
+            </p>
+
+            <div class="package-price">
+              <span class="price-label">Starting from</span>
+              <div><span class="currency">₹</span><span class="price-value">999</span><span class="price-unit"> /
+                  visit</span></div>
+              <span class="price-note">Indicative price · Confirm before booking</span>
+            </div>
+
+            <div class="package-includes">
+              <h4>Package highlights</h4>
+              <ul>
+                <li><i class="fa-solid fa-check"></i> Basic vehicle inspection</li>
+                <li><i class="fa-solid fa-check"></i> Fluid-level check</li>
+                <li><i class="fa-solid fa-check"></i> Battery condition check</li>
+                <li><i class="fa-solid fa-check"></i> Basic exterior wash</li>
+              </ul>
+            </div>
+
+            <a href="booking.html?package=Essential%20Care" class="package-book-btn">
+              Choose Essential <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <p class="package-footnote">Parts, oil and additional repairs may cost extra.</p>
+          </article>
+
+          <!-- PACKAGE 2 -->
+          <article class="package-card reveal" data-category="maintenance" data-package="Regular Service">
+            <div class="package-card-top">
+              <div class="package-icon"><i class="fa-solid fa-gears"></i></div>
+              <span class="package-type">ROUTINE MAINTENANCE</span>
+            </div>
+
+            <h3>Regular Service</h3>
+            <p class="package-description">
+              A more detailed maintenance visit for routine car care.
+            </p>
+
+            <div class="package-price">
+              <span class="price-label">Starting from</span>
+              <div><span class="currency">₹</span><span class="price-value">1,999</span><span class="price-unit"> /
+                  visit</span></div>
+              <span class="price-note">Indicative price · Confirm before booking</span>
+            </div>
+
+            <div class="package-includes">
+              <h4>Package highlights</h4>
+              <ul>
+                <li><i class="fa-solid fa-check"></i> General vehicle inspection</li>
+                <li><i class="fa-solid fa-check"></i> Battery and electrical check</li>
+                <li><i class="fa-solid fa-check"></i> Brake condition inspection</li>
+                <li><i class="fa-solid fa-check"></i> Fluid and filter assessment</li>
+              </ul>
+            </div>
+
+            <a href="booking.html?package=Regular%20Service" class="package-book-btn">
+              Choose Regular <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <p class="package-footnote">Replacement parts and scheduled maintenance items are extra unless confirmed.
+            </p>
+          </article>
+
+          <!-- PACKAGE 3 -->
+          <article class="package-card package-card-featured reveal" data-category="cleaning"
+            data-package="Clean Drive">
+            <div class="package-popular"><i class="fa-solid fa-star"></i> CUSTOMER FAVOURITE</div>
+
+            <div class="package-card-top">
+              <div class="package-icon"><i class="fa-solid fa-spray-can-sparkles"></i></div>
+              <span class="package-type">CLEAN & REFRESH</span>
+            </div>
+
+            <h3>Clean Drive</h3>
+            <p class="package-description">
+              Give your car a fresher look inside and out.
+            </p>
+
+            <div class="package-price">
+              <span class="price-label">Starting from</span>
+              <div><span class="currency">₹</span><span class="price-value">1,499</span><span class="price-unit"> /
+                  visit</span></div>
+              <span class="price-note">Indicative price · Confirm before booking</span>
+            </div>
+
+            <div class="package-includes">
+              <h4>Package highlights</h4>
+              <ul>
+                <li><i class="fa-solid fa-check"></i> Exterior wash and dry</li>
+                <li><i class="fa-solid fa-check"></i> Interior vacuuming</li>
+                <li><i class="fa-solid fa-check"></i> Dashboard and surface cleaning</li>
+                <li><i class="fa-solid fa-check"></i> Window and mirror cleaning</li>
+              </ul>
+            </div>
+
+            <a href="booking.html?package=Clean%20Drive" class="package-book-btn">
+              Choose Clean Drive <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <p class="package-footnote">Deep stain removal and specialist detailing may be priced separately.</p>
+          </article>
+
+          <!-- PACKAGE 4 -->
+          <article class="package-card reveal" data-category="complete" data-package="Complete Care">
+            <div class="package-card-top">
+              <div class="package-icon"><i class="fa-solid fa-shield-heart"></i></div>
+              <span class="package-type">COMPREHENSIVE CARE</span>
+            </div>
+
+            <h3>Complete Care</h3>
+            <p class="package-description">
+              Combine general checks with a clean, comfortable drive.
+            </p>
+
+            <div class="package-price">
+              <span class="price-label">Starting from</span>
+              <div><span class="currency">₹</span><span class="price-value">2,999</span><span class="price-unit"> /
+                  visit</span></div>
+              <span class="price-note">Indicative price · Confirm before booking</span>
+            </div>
+
+            <div class="package-includes">
+              <h4>Package highlights</h4>
+              <ul>
+                <li><i class="fa-solid fa-check"></i> General vehicle health inspection</li>
+                <li><i class="fa-solid fa-check"></i> Battery and brake assessment</li>
+                <li><i class="fa-solid fa-check"></i> Exterior wash and interior vacuum</li>
+                <li><i class="fa-solid fa-check"></i> Basic cabin and surface cleaning</li>
+              </ul>
+            </div>
+
+            <a href="booking.html?package=Complete%20Care" class="package-book-btn">
+              Choose Complete Care <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <p class="package-footnote">Final scope and price depend on vehicle type and inspection findings.</p>
+          </article>
+
+        </div>
+
+        <div class="package-empty" id="packageEmpty" hidden>
+          <span><i class="fa-solid fa-car-side"></i></span>
+          <h3>No packages in this category</h3>
+          <p>Try another category to explore available options.</p>
+          <button type="button" class="btn btn-primary" id="resetPackages">View all packages</button>
+        </div>
+
+        <p class="package-disclaimer">
+          <i class="fa-solid fa-circle-info"></i>
+          Prices shown are sample starting prices for this website design. Confirm actual prices,
+          vehicle eligibility, inclusions and availability with ApnaAutoCare before publishing or booking.
+        </p>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="package-process section-padding">
+      <div class="container">
+        <div class="process-heading reveal">
+          <span class="section-label section-label-light">A SIMPLE PROCESS</span>
+          <h2>Choose. Book. <span>Drive happy.</span></h2>
+          <p>Getting started with your next car care visit can be straightforward.</p>
+        </div>
+
+        <div class="process-grid">
+          <article class="process-step reveal">
+            <span class="process-number">01</span>
+            <div class="process-icon"><i class="fa-solid fa-clipboard-list"></i></div>
+            <h3>Choose a package</h3>
+            <p>Compare the options and select the care your car needs.</p>
+          </article>
+
+          <article class="process-step reveal">
+            <span class="process-number">02</span>
+            <div class="process-icon"><i class="fa-solid fa-calendar-days"></i></div>
+            <h3>Send your enquiry</h3>
+            <p>Share your vehicle details and preferred service date.</p>
+          </article>
+
+          <article class="process-step reveal">
+            <span class="process-number">03</span>
+            <div class="process-icon"><i class="fa-solid fa-car"></i></div>
+            <h3>Confirm your visit</h3>
+            <p>Confirm the final service scope, price and availability.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- HELP CTA -->
+    <section class="package-help-section section-padding">
+      <div class="container">
+        <div class="package-help-card reveal">
+          <div class="package-help-decoration package-help-decoration-one"></div>
+          <div class="package-help-decoration package-help-decoration-two"></div>
+
+          <div class="package-help-icon"><i class="fa-solid fa-headset"></i></div>
+
+          <div class="package-help-copy">
+            <span class="section-label section-label-light">NOT SURE WHAT YOU NEED?</span>
+            <h2>Let's find the right package for your car.</h2>
+            <p>
+              Tell us about your vehicle and what you want to get done.
+              We'll help you explore the appropriate service options.
+            </p>
+          </div>
+
+          <div class="package-help-actions">
+            <a href="contact.html" class="btn btn-primary btn-large">
+              Talk to Our Team <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="services.html" class="package-help-link">Browse all services</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER: Keep consistent with index.html and services.html -->
+  <footer class="site-footer">
+    <div class="footer-main container">
+      <div class="footer-brand-column">
+        <a href="index.html" class="brand footer-brand">
+          <span class="brand-icon"><i class="fa-solid fa-car-side"></i></span>
+          <span class="brand-copy">
+            <span class="brand-name">Apna<span>AutoCare</span></span>
+            <span class="brand-tagline">Your Car. Our Responsibility.</span>
+          </span>
+        </a>
+
+        <p class="footer-description">
+          Thoughtful car care, helpful service options, and a simpler way
+          to arrange your next vehicle maintenance visit.
+        </p>
+
+        <div class="footer-socials">
+          <a href="https://www.instagram.com/" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i
+              class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.facebook.com/" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i
+              class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.youtube.com/" aria-label="YouTube" target="_blank" rel="noopener noreferrer"><i
+              class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-column">
+        <h3>Explore</h3>
+        <a href="index.html">Home</a>
+        <a href="services.html">Our Services</a>
+        <a href="packages.html">Service Packages</a>
+        <a href="about.html">About Us</a>
+      </div>
+
+      <div class="footer-column">
+        <h3>Customer Care</h3>
+        <a href="booking.html">Book a Service</a>
+        <a href="reviews.html">Customer Reviews</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="faq.html">FAQs</a>
+      </div>
+
+      <div class="footer-column footer-contact-column">
+        <h3>Let's Connect</h3>
+        <p><i class="fa-solid fa-location-dot"></i> Your local car care partner</p>
+        <p><i class="fa-solid fa-calendar-check"></i> Service by appointment</p>
+        <a href="booking.html" class="footer-book-link">Plan your next visit <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>© <span id="currentYear"></span> ApnaAutoCare. All rights reserved.</p>
+        <div class="footer-legal-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms & Conditions</a>
+        </div>
+        <a href="#top" class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script src="js/packages.js"></script>
+</body>
+
+</html>

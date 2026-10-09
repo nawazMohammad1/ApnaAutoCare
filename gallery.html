@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101820">
+  <meta name="description"
+    content="Explore the ApnaAutoCare gallery featuring automotive maintenance, car detailing, workshop care, and vehicle transformations.">
+
+  <title>Our Gallery | ApnaAutoCare</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/gallery.css">
+</head>
+
+<body>
+
+  <!-- ================= PRELOADER ================= -->
+  <div class="preloader" id="preloader" aria-label="Loading ApnaAutoCare">
+    <div class="loader-content">
+      <div class="loader-logo"><i class="fa-solid fa-car-side"></i></div>
+      <h2>Apna<span>AutoCare</span></h2>
+      <p>Your Car. Our Responsibility.</p>
+      <div class="loader-track"><span></span></div>
+    </div>
+  </div>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="site-header" id="siteHeader">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a href="index.html" class="brand" aria-label="ApnaAutoCare home">
+        <span class="brand-icon"><i class="fa-solid fa-car-side"></i></span>
+        <span class="brand-name">Apna<span>AutoCare</span></span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation menu" aria-expanded="false"
+        aria-controls="navMenu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <div class="nav-menu" id="navMenu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="packages.html" class="nav-link">Packages</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="reviews.html" class="nav-link">Reviews</a>
+        <a href="contact.html" class="nav-link mobile-contact">Contact</a>
+        <a href="booking.html" class="nav-booking">
+          Book a Service <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ================= GALLERY HERO ================= -->
+    <section class="gallery-hero">
+      <div class="gallery-hero-image" role="img" aria-label="A professionally maintained car"></div>
+      <div class="gallery-hero-overlay"></div>
+
+      <div class="container gallery-hero-content">
+        <div class="gallery-hero-copy">
+          <span class="eyebrow eyebrow-light">
+            <span class="eyebrow-line"></span>
+            A CLOSER LOOK AT OUR WORLD
+          </span>
+
+          <h1>Care you can see.<br><span>Quality you can feel.</span></h1>
+
+          <p>
+            From everyday maintenance to detailed finishing, explore the
+            world of car care that inspires every journey at ApnaAutoCare.
+          </p>
+
+          <div class="gallery-hero-actions">
+            <a href="#galleryCollection" class="btn btn-primary">
+              Explore Gallery <i class="fa-solid fa-arrow-down"></i>
+            </a>
+            <a href="booking.html" class="gallery-hero-link">
+              Book a service <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="gallery-hero-badge">
+          <span class="hero-badge-icon"><i class="fa-solid fa-camera-retro"></i></span>
+          <div>
+            <strong>Behind every smooth drive</strong>
+            <p>Attention to the little details.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-hero-bottom"></div>
+    </section>
+
+    <!-- ================= INTRO ================= -->
+    <section class="gallery-intro section-padding">
+      <div class="container gallery-intro-grid">
+        <div class="gallery-intro-heading reveal">
+          <span class="section-label">
+            <span class="section-label-mark"></span>
+            THE APNAAUTOCARE GALLERY
+          </span>
+          <h2>Every detail has <span>a story.</span></h2>
+        </div>
+
+        <div class="gallery-intro-copy reveal">
+          <p>
+            A well-cared-for car is more than a polished exterior. It's
+            careful inspection, routine maintenance, attention to detail,
+            and the confidence to get back on the road.
+          </p>
+          <a href="services.html" class="text-link">
+            Discover our services <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= GALLERY COLLECTION ================= -->
+    <section class="gallery-collection section-padding" id="galleryCollection">
+      <div class="container">
+
+        <div class="gallery-section-heading reveal">
+          <div>
+            <span class="section-label">
+              <span class="section-label-mark"></span>
+              OUR WORK & INSPIRATION
+            </span>
+            <h2>Explore the <span>collection.</span></h2>
+            <p>Choose a category to explore different sides of automotive care.</p>
+          </div>
+
+          <div class="gallery-count-box">
+            <span class="gallery-count-icon"><i class="fa-regular fa-images"></i></span>
+            <div>
+              <strong id="galleryCount">12</strong>
+              <span>gallery images</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- FILTER BUTTONS -->
+        <div class="gallery-toolbar reveal">
+          <div class="gallery-filters" role="group" aria-label="Filter gallery images">
+            <button class="gallery-filter active" type="button" data-filter="all" aria-pressed="true">All
+              Photos</button>
+            <button class="gallery-filter" type="button" data-filter="maintenance"
+              aria-pressed="false">Maintenance</button>
+            <button class="gallery-filter" type="button" data-filter="detailing" aria-pressed="false">Detailing</button>
+            <button class="gallery-filter" type="button" data-filter="workshop" aria-pressed="false">Workshop</button>
+            <button class="gallery-filter" type="button" data-filter="vehicles" aria-pressed="false">Cars &amp;
+              Drives</button>
+          </div>
+
+          <span class="gallery-results" id="galleryResults" aria-live="polite">Showing all photos</span>
+        </div>
+
+        <!-- GALLERY GRID -->
+        <div class="gallery-grid" id="galleryGrid">
+
+          <article class="gallery-card gallery-card-large reveal" data-category="maintenance">
+            <button class="gallery-image-button" type="button"
+              data-full="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=1800&q=90"
+              data-title="Professional Car Maintenance" data-category-label="Maintenance"
+              aria-label="Enlarge photo: Professional Car Maintenance">
+              <img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=1000&q=85"
+                alt="Automotive service and maintenance in a workshop" loading="eager">
+              <span class="gallery-image-overlay"></span>
+              <span class="gallery-zoom"><i class="fa-solid fa-expand"></i></span>
+            </button>
+            <div class="gallery-card-info">
+              <div>
+                <span class="gallery-category">Maintenance</span>
+                <h3>Professional Car Care</h3>
+                <p>Keeping the essentials in check.</p>
+              </div>
+              <span class="gallery-card-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+            </div>
+          </article>
+
+          <article class="gallery-card reveal" data-category="vehicles">
+            <button class="gallery-image-button" type="button"
+              data-full="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1800&q=90"
+              data-title="Automotive Design" data-category-label="Cars & Drives"
+              aria-label="Enlarge photo: Automotive Design">
+              <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=900&q=85"
+                alt="Modern car exterior with carefully styled bodywork" loading="lazy">
+              <span class="gallery-image-overlay"></span>
+              <span class="gallery-zoom"><i class="fa-solid fa-expand"></i></span>
+            </button>
+            <div class="gallery-card-info">
+              <div>
+                <span class="gallery-category">Cars &amp; Drives</span>
+                <h3>Designed to Stand Out</h3>
+                <p>Appreciating the details of every drive.</p>
+              </div>
+              <span class="gallery-card-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+            </div>
+          </article>
+
+          <article class="gallery-card reveal" data-category="detailing">
+            <button class="gallery-image-button" type="button"
+              data-full="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1800&q=90"
+              data-title="Premium Vehicle Finish" data-category-label="Detailing"
+              aria-label="Enlarge photo: Premium Vehicle Finish">
+              <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=900&q=85"
+                alt="Premium sports car with a glossy finish" loading="lazy">
+              <span class="gallery-image-overlay"></span>
+              <span class="gallery-zoom"><i class="fa-solid fa-expand"></i></span>
+            </button>
+            <div class="gallery-card-info">
+              <div>
+                <span class="gallery-category">Detailing</span>
+                <h3>Finish with Care</h3>
+                <p>A closer look at automotive styling.</p>
+              </div>
+              <span class="gallery-card-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+            </div>
+          </article>
+
+          <article class="gallery-card reveal" data-category="workshop">
+            <button class="gallery-image-button" type="button"
+              data-full="https://images.unsplash.com/photo-1487754180451-c456f719a1fc?auto=format&fit=crop&w=1800&q=90"
+              data-title="Inside the Workshop" data-category-label="Workshop"
+              aria-label="Enlarge photo: Inside the Workshop">
+              <img src="https://images.unsplash.com/photo-1487754180451-c456f719a1fc?auto=format&fit=crop&w=900&q=85"
+                alt="Vehicle in an automotive workshop" loading="lazy">
+              <span class="gallery-image-overlay"></span>
+              <span class="gallery-zoom"><i class="fa-solid fa-expand"></i></span>
+            </button>
+            <div class="gallery-card-info">
+              <div>
+                <span class="gallery-category">Workshop</span>
+                <h3>Behind the Scenes</h3>
+                <p>Where careful work takes place.</p>
+              </div>
+              <span class="gallery-card-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+            </div>
+          </article>
+
+          <article class="gallery-card gallery-card-large reveal" data-category="vehicles">
+            <button class="gallery-image-button" type="button"
+              data-full="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=1800&q=90"
+              data-title="Performance and Style" data-category-label="Cars & Drives"
+              aria-label="Enlarge photo: Performance and Style">
+              <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=1000&q=85"
+                alt="Sporty car photographed outdoors" loading="lazy">
+              <span class="gallery-image-overlay"></span>
+              <span class="gallery-zoom"><i class="fa-solid fa-expand"></i></span>
+            </button>
+            <div class="gallery-card-info">
+              <div>
+                <span class="gallery-category">Cars &amp; Drives</span>
+                <h3>Made for the Journey</h3>
+                <p>Good care keeps every journey moving.</p>
+              </div>
+              <span class="gallery-card-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+            </div>
+          </article>
+
+          <article class="gallery-card reveal" data-category="maintenance">
+            <button class="gallery-image-button" type="button"
+              data-full="https://images.unsplash.com/photo-1504222490345-c075b0f5c8a2?auto=format&fit=crop&w=1800&q=90"
+              data-title="Vehicle Inspection" data-category-label="Maintenance"
+              aria-label="Enlarge photo: Vehicle Inspection">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3vplJxsn61M6fLxP0f85YhEgTh7fnSnPrYISW9mojLw&s=10"
+                alt="Car being checked and maintained" loading="lazy">
+              <span class="gallery-image-overlay"></span>
+              <span class="gallery-zoom"><i class="fa-solid fa-expand"></i></span>
+            </button>
+            <div class="gallery-card-info">
+              <div>
+                <span class="gallery-category">Maintenance</span>
+                <h3>Check Before You Drive</h3>
+                <p>Routine checks support safer motoring.</p>
+              </div>
+              <span class="gallery-card-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+            </div>
+          </article>
+
+          <article class="gallery-card reveal" data-category="detailing">
+            <button class="gallery-image-button" type="button"
+              data-full="https://images.unsplash.com/photo-1507136566006-cfc505b114fc?auto=format&fit=crop&w=1800&q=90"
+              data-title="Automotive Detailing Inspiration" data-category-label="Detailing"
+              aria-label="Enlarge photo: Automotive Detailing Inspiration">
+              <img src="https://images.unsplash.com/photo-1507136566006-cfc505b114fc?auto=format&fit=crop&w=900&q=85"
+                alt="Close view of a clean car exterior" loading="lazy">
+              <span class="gallery-image-overlay"></span>
+              <span class="gallery-zoom"><i class="fa-solid fa-expand"></i></span>
+            </button>
+            <div class="gallery-card-info">
+              <div>
+                <span class="gallery-category">Detailing</span>
+                <h3>The Finishing Touch</h3>
+                <p>Small details make a visible difference.</p>
+              </div>
+              <span class="gallery-card-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+            </div>
+          </article>
+
+          <article class="gallery-card reveal" data-category="workshop">
+            <button class="gallery-image-button" type="button"
+              data-full="https://images.unsplash.com/photo-1489824904134-891ab64532f1?auto=format&fit=crop&w=1800&q=90"
+              data-title="Automotive Workshop Care" data-category-label="Workshop"
+              aria-label="Enlarge photo: Automotive Workshop Care">
+              <img src="https://images.unsplash.com/photo-1489824904134-891ab64532f1?auto=format&fit=crop&w=900&q=85"
+                alt="Car prepared for workshop inspection" loading="lazy">
+              <span class="gallery-image-overlay"></span>
+              <span class="gallery-zoom"><i class="fa-solid fa-expand"></i></span>
+            </button>
+            <div class="gallery-card-info">
+              <div>
+                <span class="gallery-category">Workshop</span>
+                <h3>Ready for Inspection</h3>
+                <p>A careful approach to vehicle care.</p>
+              </div>
+              <span class="gallery-card-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+            </div>
+          </article>
+
+          <article class="gallery-card reveal" data-category="vehicles">
+            <button class="gallery-image-button" type="button"
+              data-full="https://images.unsplash.com/photo-1493238792000-8113da705763?auto=format&fit=crop&w=1800&q=90"
+              data-title="Everyday Driving" data-category-label="Cars & Drives"
+              aria-label="Enlarge photo: Everyday Driving">
+              <img src="https://images.unsplash.com/photo-1493238792000-8113da705763?auto=format&fit=crop&w=900&q=85"
+                alt="Stylish car photographed in an outdoor setting" loading="lazy">
+              <span class="gallery-image-overlay"></span>
+              <span class="gallery-zoom"><i class="fa-solid fa-expand"></i></span>
+            </button>
+            <div class="gallery-card-info">
+              <div>
+                <span class="gallery-category">Cars &amp; Drives</span>
+                <h3>Made for Everyday Roads</h3>
+                <p>Care for the car that takes you places.</p>
+              </div>
+              <span class="gallery-card-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+            </div>
+          </article>
+
+          <article class="gallery-card reveal" data-category="maintenance">
+            <button class="gallery-image-button" type="button"
+              data-full="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=1800&q=90"
+              data-title="Vehicle Care Essentials" data-category-label="Maintenance"
+              aria-label="Enlarge photo: Vehicle Care Essentials">
+              <img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=900&q=85"
+                alt="Car exterior representing routine vehicle care" loading="lazy">
+              <span class="gallery-image-overlay"></span>
+              <span class="gallery-zoom"><i class="fa-solid fa-expand"></i></span>
+            </button>
+            <div class="gallery-card-info">
+              <div>
+                <span class="gallery-category">Maintenance</span>
+                <h3>Care for the Long Run</h3>
+                <p>Make maintenance part of your routine.</p>
+              </div>
+              <span class="gallery-card-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+            </div>
+          </article>
+
+          <article class="gallery-card reveal" data-category="detailing">
+            <button class="gallery-image-button" type="button"
+              data-full="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=1800&q=90"
+              data-title="Clean Lines and Finish" data-category-label="Detailing"
+              aria-label="Enlarge photo: Clean Lines and Finish">
+              <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=900&q=85"
+                alt="Vehicle styling and exterior finish" loading="lazy">
+              <span class="gallery-image-overlay"></span>
+              <span class="gallery-zoom"><i class="fa-solid fa-expand"></i></span>
+            </button>
+            <div class="gallery-card-info">
+              <div>
+                <span class="gallery-category">Detailing</span>
+                <h3>Clean Lines, Clean Finish</h3>
+                <p>Celebrating the details of a cared-for car.</p>
+              </div>
+              <span class="gallery-card-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+            </div>
+          </article>
+
+          <article class="gallery-card reveal" data-category="workshop">
+            <button class="gallery-image-button" type="button"
+              data-full="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=1800&q=90"
+              data-title="Cars Ready for the Road" data-category-label="Workshop"
+              aria-label="Enlarge photo: Cars Ready for the Road">
+              <img src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=900&q=85"
+                alt="Vehicle ready for another journey" loading="lazy">
+              <span class="gallery-image-overlay"></span>
+              <span class="gallery-zoom"><i class="fa-solid fa-expand"></i></span>
+            </button>
+            <div class="gallery-card-info">
+              <div>
+                <span class="gallery-category">Workshop</span>
+                <h3>Ready for the Road</h3>
+                <p>Reliable care for journeys ahead.</p>
+              </div>
+              <span class="gallery-card-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="gallery-empty" id="galleryEmpty" hidden>
+          <i class="fa-regular fa-images"></i>
+          <h3>No photos in this category</h3>
+          <p>Please choose another category.</p>
+          <button type="button" class="btn btn-primary" id="resetGallery">Show All Photos</button>
+        </div>
+
+        <p class="gallery-note">
+          <i class="fa-solid fa-circle-info"></i>
+          These photos are illustrative automotive imagery, not a verified record of work completed by ApnaAutoCare.
+        </p>
+      </div>
+    </section>
+
+    <!-- ================= GALLERY FEATURE ================= -->
+    <section class="gallery-feature">
+      <div class="container gallery-feature-grid">
+        <div class="gallery-feature-image reveal">
+          <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1200&q=85"
+            alt="Modern car exterior with reflective finish" loading="lazy">
+          <div class="feature-image-caption">
+            <i class="fa-solid fa-sparkles"></i>
+            <span>Care in every detail</span>
+          </div>
+        </div>
+
+        <div class="gallery-feature-content reveal">
+          <span class="section-label">
+            <span class="section-label-mark"></span>
+            MORE THAN A CLEAN CAR
+          </span>
+          <h2>Good care starts <span>before the journey.</span></h2>
+          <p>
+            Regular maintenance and thoughtful vehicle care can help you
+            stay on top of your car's needs. Explore our services and
+            choose what works for your vehicle.
+          </p>
+
+          <div class="gallery-feature-points">
+            <div>
+              <span><i class="fa-solid fa-check"></i></span>
+              <p>Routine maintenance and inspections</p>
+            </div>
+            <div>
+              <span><i class="fa-solid fa-check"></i></span>
+              <p>Cleaning and detailing options</p>
+            </div>
+            <div>
+              <span><i class="fa-solid fa-check"></i></span>
+              <p>Service choices for different needs</p>
+            </div>
+          </div>
+
+          <a href="services.html" class="btn btn-primary">
+            View Our Services <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FINAL CTA ================= -->
+    <section class="gallery-cta">
+      <div class="container">
+        <div class="gallery-cta-inner reveal">
+          <div>
+            <span class="eyebrow eyebrow-light">
+              <span class="eyebrow-line"></span>
+              YOUR NEXT CHAPTER STARTS HERE
+            </span>
+            <h2>Let's give your car the <span>care it deserves.</span></h2>
+            <p>Explore our services or request a convenient appointment.</p>
+          </div>
+
+          <div class="gallery-cta-actions">
+            <a href="booking.html" class="btn btn-primary">
+              Book a Service <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="contact.html" class="gallery-cta-contact">Talk to our team</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-main">
+
+        <div class="footer-brand-column">
+          <a href="index.html" class="brand footer-brand">
+            <span class="brand-icon"><i class="fa-solid fa-car-side"></i></span>
+            <span class="brand-name">Apna<span>AutoCare</span></span>
+          </a>
+
+          <p class="footer-description">
+            Your Car. Our Responsibility. Making everyday car care simpler,
+            more convenient, and easier to understand.
+          </p>
+
+          <div class="footer-socials">
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-links-column">
+          <h4>Explore</h4>
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="services.html">Our Services</a>
+          <a href="packages.html">Service Packages</a>
+          <a href="reviews.html">Customer Reviews</a>
+        </div>
+
+        <div class="footer-links-column">
+          <h4>Quick Links</h4>
+          <a href="booking.html">Book a Service</a>
+          <a href="gallery.html">Our Gallery</a>
+          <a href="contact.html">Contact Us</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms &amp; Conditions</a>
+        </div>
+
+        <div class="footer-contact-column">
+          <h4>Let's Connect</h4>
+          <p><i class="fa-solid fa-car-side"></i> Your car deserves the right care.</p>
+          <p><i class="fa-solid fa-calendar-check"></i> Appointment requests made simple.</p>
+          <a href="booking.html" class="footer-booking-link">
+            Book your service <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="currentYear"></span> ApnaAutoCare. All rights reserved.</p>
+        <p>Made with <i class="fa-solid fa-heart"></i> for better journeys.</p>
+        <a href="#siteHeader" class="back-to-top" aria-label="Back to top">
+          <i class="fa-solid fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= LIGHTBOX ================= -->
+  <div class="gallery-lightbox" id="galleryLightbox" aria-hidden="true">
+    <button class="lightbox-backdrop" type="button" data-close-lightbox aria-label="Close image viewer"></button>
+
+    <div class="lightbox-dialog" role="dialog" aria-modal="true" aria-label="Gallery image viewer" tabindex="-1">
+      <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Close image viewer">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <button class="lightbox-nav lightbox-prev" id="lightboxPrev" type="button" aria-label="Previous image">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+
+      <figure class="lightbox-figure">
+        <img src="" alt="" id="lightboxImage">
+        <figcaption>
+          <span id="lightboxCategory"></span>
+          <h2 id="lightboxTitle"></h2>
+        </figcaption>
+      </figure>
+
+      <button class="lightbox-nav lightbox-next" id="lightboxNext" type="button" aria-label="Next image">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
+
+      <div class="lightbox-counter" id="lightboxCounter" aria-live="polite">1 / 12</div>
+    </div>
+  </div>
+
+  <button class="back-to-top-floating" id="backToTop" type="button" aria-label="Scroll to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="js/gallery.js"></script>
+</body>
+
+</html>
